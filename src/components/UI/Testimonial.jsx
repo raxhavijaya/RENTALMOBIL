@@ -37,9 +37,18 @@ const Testimonial = () => {
   };
 
   return (
-    <Container>
+    <Container id="testimonial">
+      <div className="text-center">
+        <h1>Testimonial</h1>
+        <p>Berbagai review positif dari para pelanggan kami</p>
+      </div>
       <Slider {...settings}>
-        <div className="testimonial py-4 px-3">
+        <div className="testimonial gap-3 py-4 px-3">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
           <p className="section__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni explicabo molestias recusandae repudiandae, dolor, sapiente placeat ab, animi eum minima nulla facere aliquam aut
             vitae quo pariatur voluptate odit?
@@ -56,6 +65,11 @@ const Testimonial = () => {
         </div>
 
         <div className="testimonial py-4 px-3">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
           <p className="section__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni explicabo molestias recusandae repudiandae, dolor, sapiente placeat ab, animi eum minima nulla facere aliquam aut
             vitae quo pariatur voluptate odit?
@@ -72,6 +86,11 @@ const Testimonial = () => {
         </div>
 
         <div className="testimonial py-4 px-3">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
           <p className="section__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni explicabo molestias recusandae repudiandae, dolor, sapiente placeat ab, animi eum minima nulla facere aliquam aut
             vitae quo pariatur voluptate odit?
@@ -88,6 +107,11 @@ const Testimonial = () => {
         </div>
 
         <div className="testimonial py-4 px-3">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
           <p className="section__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni explicabo molestias recusandae repudiandae, dolor, sapiente placeat ab, animi eum minima nulla facere aliquam aut
             vitae quo pariatur voluptate odit?

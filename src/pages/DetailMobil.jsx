@@ -35,7 +35,7 @@ const DetailMobil = () => {
       <Header />
       <CariMobilForm disableForm={true} />
       <Container className="mt-5">
-        <Row>
+        <Row className="d-flex justify-content-between">
           <Col className="detail" lg="6" md="6" sm="6">
             <h5>Tentang Paket</h5>
             <h5>Include</h5>
@@ -60,21 +60,27 @@ const DetailMobil = () => {
               <li>Tidak termasuk akomodasi penginapan</li>
             </ul>
           </Col>
-          <Col className='detail gap-3' lg="6" md="6" sm="6">
+          <Col className="detail " lg="5" md="5" sm="5">
             {!loading ? (
-              <div>
-                <img className="imgCar" src={car.image} />
-                <p>{car.name}</p>
-                <p><i class="ri-user-line">{car.category}</i></p>
-                <p>Total {car.price}</p>
+              <div className="">
+                <div className="text-center">
+                  <img className="imgCar" src={car.image} alt="Car" />
+                </div>
+                <p className="carname">{car.name}</p>
+                <p>
+                  <i class="ri-group-line"></i> {car.category}
+                </p>
+                <p className="carprice">Total {car.price}</p>
               </div>
             ) : (
-              <h2>Loading...</h2>
+              <h2>
+                <i class="ri-loader-line"></i>
+              </h2>
             )}
           </Col>
         </Row>
       </Container>
-      <Footer/>
+      <Footer />
     </>
   );
 };

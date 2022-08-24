@@ -16,8 +16,8 @@ const LandingPage = () => {
       <OurServices />
       <WhyUs />
       <Testimonial />
-      <SewaMobil/>
-      <FAQ/>
+      <SewaMobil />
+      <FAQ />
       <Footer />
     </div>
   );

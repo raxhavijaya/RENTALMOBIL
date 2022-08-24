@@ -35,30 +35,40 @@ const CariMobil = () => {
   return (
     <div className="page">
       <Header />
-      <TopSection showSection={false}/>
+      <TopSection showSection={false} />
       <CariMobilForm cars={car} setFilteredCars={setFilteredCars} disableForm={false} />
-      <Container>
-          <Col  lg='5' md='5' sm='5'>
       {!loading ? (
-        <div className="grid">
-          {filteredCars.length &&
-            filteredCars.map((icar, index) => (
-              <div className="card d-flex" key={index}>
-                <p>{icar.name}</p>
-                <p>{icar.price} / hari</p>
-                <img src={icar.image} />
-                <Link to={`/detailmobil/${icar.id}`}>
-                  <Button>Pilih mobil</Button>
-                </Link>
-              </div>
-            ))}
-        </div>
+        <Container className="">
+          <Row>
+            {filteredCars.length &&
+              filteredCars.map((icar, index) => (
+                <Col className="gap-3 mt-3 mb-3" lg="4" md="4" sm="4">
+                  <div className="card carList" key={index}>
+                    <div className="text-center">
+                      <img className="card-img imgCar" src={icar.image} alt="Car" />
+                    </div>
+                    <div className="card-body">
+                      <p className="card-title">{icar.name}</p>
+                      <p className="card-text">{icar.price} / hari</p>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quo asperiores, sapiente, velit possimus quam iste nobis vel pariatur dicta debitis natus? Sequi impedit
+                        numquam fugiat voluptates ex eos quibusdam?
+                      </p>
+                      <Link to={`/detailmobil/${icar.id}`}>
+                        <Button className="btn">Pilih mobil</Button>
+                      </Link>
+                    </div>
+                  </div>
+                </Col>
+              ))}
+          </Row>
+        </Container>
       ) : (
-        <h2>Loading...</h2>
+        <h2>
+          <i class="ri-loader-line"></i>
+        </h2>
       )}
-      </Col>
-      </Container>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -15,19 +15,66 @@
   background: #f1f3ff;
 }
 
+.navBrand {
+  background: #0d28a6;
+  color: rgba(255, 255, 255, 0.653);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
 .topSection {
   background: #f1f3ff;
 }
 
 .topRight {
- 
 }
 
-.mercedes{
-background: linear-gradient(360deg, #0D28a6 50%, #f1f3ff 50%);
+.sewamobil {
+  margin-top: 100px;
 }
 
-.form{
+.topContainer {
+}
+
+.mercedes {
+  background: url(./assets/images/bg1.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.happygirl {
+  background: #0d28a6;
+  width: 300px;
+  height: 300px;
+}
+
+.carList {
+  background: #fff;
+  border: 1px solid #888888;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+.check_icon i {
+  background: #cfd4ed;
+  border-radius: 50%;
+}
+
+.btn {
+  background: #5cb85f;
+}
+
+.form {
   background: #fff;
   border: 1px solid #888888;
   border-radius: 8px;
@@ -38,19 +85,128 @@ ul.a {
   list-style-type: circle;
 }
 
-.detail{
+.detail {
   background: #fff;
   border: 1px solid #888888;
   border-radius: 8px;
   box-shadow: 0px 0px 10px #888888;
 }
 
-.imgCar{
-  width: 400px;
-  height: 300px;
-  
+.whyussection {
+  width: 270px;
+  height: 200px;
+  background: #fff;
+  border: 2px solid #b8b6b6;
+  border-radius: 8px;
+  padding: 10px;
 }
 
-.card{
-  
+.whyussection i {
+  color: #fff;
+}
+
+.bgicon1 {
+  background: rgb(255, 225, 0);
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.bgicon2 {
+  background: red;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.bgicon3 {
+  background: #0d28a6;
+  border-radius: 50%;
+  font-size: 30px;
+}
+.bgicon4 {
+  background: rgb(0, 210, 0);
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.whyuss {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.cardsection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 40px;
+}
+
+.icon i {
+  background: #0d28a6;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.footer {
+  margin-top: 200px;
+}
+
+.textfooter {
+  font-weight: 600;
+}
+
+.textfooter a {
+  text-decoration: none;
+  color: black;
+}
+
+.imgCar {
+  width: 340px;
+  height: 230px;
+  margin-top: 20px;
+}
+
+.carname,
+.carprice {
+  font-weight: 600;
+}
+
+.testimonial {
+}
+
+.sewamobilcontainer {
+  background: #0d28a6;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px #888888;
+  padding: 20px;
+}
+
+.faqcontainer {
+  margin-top: 100px;
+}
+
+.colornavbar {
+  color: black;
+}
+
+.testimonial i {
+  color: rgb(255, 247, 0);
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonial p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .testimonial h6 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .testimonial img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+  }
 }
